@@ -138,7 +138,11 @@ body{
     transform: rotate(45deg);
 }
 .filter .active dd{
+<<<<<<< HEAD
     /* display: block; 1*/
+=======
+    /* display: block; ok1*/
+>>>>>>> solve-css
 }
 .filter dl,.filter dd{
     margin: 0;
