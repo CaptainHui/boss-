@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing:antialiased;
+}
+
+.home-header{
+    background: url(../images/home-bg.png) no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.home-header > img{
+    width: 65%;
+    margin: 2rem;
+}
+.home-header form{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 2.2rem;
+    border-radius: 2.2rem;
+}
+.home-header form input{
+    width: 75%;
+    color: #999;
+    outline: none;
+    font-size: 0.85rem;
+}
+.home-header form button{
+    color: #5bd4c7;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    border: none;
+    background: none;
+}
+
+.home-categorys{
+    margin: 0 1rem;
+}
+.home-categorys dl{
+}
+.home-categorys dl dt{
+    display: flex;
+    align-items: center;
+}
+.home-categorys dt img{
+    height: 3rem;
+    margin-right: 0.8rem;
+}
+.home-categorys dt div{
+    font-size: 1.1rem;
+}
+.home-categorys dd{
+    margin: 0 -0.2rem;
+
+    border-bottom: 1px solid #f5f8f9;
+}
+.home-categorys dd .tag{
+    background: #f5f8f9;
+    text-decoration: none;
+    color: #7e8793;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: 2rem;
+    margin: 0.3rem 0.2rem;
+    font-size: 0.8rem;
+}
+
+.home-footer{
+    width: 70%;
+    margin: 0 auto;
+    color: #919aa7;
+    font-size: 12px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-header{
+    padding: 0.9rem;
+}
+.list-header form{
+    width: 100%;
+}
+.list-header form img{
+    height: 1.2rem;
+}
+.list-header form .inner{
+    margin: 0 1rem;
+    width: 70%;
+    padding: 0 1rem;
+    line-height: 1.8rem;
+    background: #f4f7f9;
+    border-radius: 1.5rem;
+}
+.list-header form button{
+    border: none;
+    background: none;
+    font-size: 1.0rem;
+    flex-shrink: 0;
+    color: #5bd4c7;
+}
+
+.list-header form input{
+    background: transparent;
+    width: 86%;
+    border: none;
+    outline: none;
+    color: #8b96a6;
+}
+
+.filter{
+    font-size: 0.8rem;;
+    padding: 0.6rem 1.2rem;
+    border: solid 1px #ebebeb;
+    color: #aaa;
+}
+.filter dt:after{
+
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border: 1px solid #999;
+    margin-left: 0.5rem;
+    border-style: solid none none solid;
+    transform: rotate(225deg);
+    transform-origin: 2px 1px;
+    transition: all 0.5s;
+}
+.filter dd{
+    display: none;
+}
+.filter .active dt:after{
+    transform: rotate(45deg);
+}
+.filter .active dd{
+    /* display: block; */
+}
+.filter dl,.filter dd{
+    margin: 0;
+}
