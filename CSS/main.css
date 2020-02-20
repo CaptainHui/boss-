@@ -118,6 +118,8 @@ body{
     padding: 0.6rem 1.2rem;
     border: solid 1px #ebebeb;
     color: #aaa;
+    margin: -1px;
+    margin-bottom: 1px;
 }
 .filter dt:after{
     content: '';
@@ -138,12 +140,75 @@ body{
     transform: rotate(45deg);
 }
 .filter .active dd{
-<<<<<<< HEAD
-    /* display: block; 1*/
-=======
-    /* display: block; ok1*/
->>>>>>> solve-css
+    display: block; 
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top:95.97px;
+    left:0;
 }
+.filter .active dd ul{
+    margin: 0;
+    padding: 0;
+    background: white;  
+}
+.filter .active dd ul li{
+    font-size: 1rem;
+    line-height: 2;
+    padding: 1rem;
+
+}
+
 .filter dl,.filter dd{
     margin: 0;
+}
+
+.filter .active li .active{
+    background: black;
+}
+.filter .active dd ul .active{
+    background: #f5f8f9;
+    color: #4b4b4b;
+}
+
+
+.job-list{
+    margin: 0;
+    padding: 0;
+
+}
+.job-item{
+    margin: 1rem;
+    text-decoration: none;
+    color: #414a60;
+    border-bottom: 1px solid #f5f8f9;
+    padding-bottom: 1rem;
+}
+.job-list a img{
+    width: 4rem;
+    border-radius: 0.3rem;
+}
+.job-list .text{
+    width: 100%;
+    margin-left: 1rem;
+}
+.job-item .title{
+    font-size: 15px;
+}
+.job-item .title span{
+    font-size: 19px;
+    color: #fc6c38;
+}
+.job-item .company{
+    font-size: 12px;
+    color: #414a60;
+    margin: 0.2rem 0;
+}
+.job-item .props{
+    font-size: 12px;
+    color: #8892ac;
+}
+.job-item .props span{
+    margin-right: 0.5rem;
 }
