@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="app">
         <div class="list-header flex">
             
             <form action="" class="flex">
@@ -181,5 +181,11 @@
             </li>
         </ul>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script>
+        new Vue({
+            el:'#app'
+        })
+    </script>
 </body>
 </html>
